@@ -11,4 +11,4 @@ jobs:
          node-version: '20.x'
          npm-install-command: 'ci'
          run-playwright: true
-         upload-artifacts: true
+         upload-artifact: true
