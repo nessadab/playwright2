@@ -32,7 +32,7 @@ jobs:
         node-version: ${{ inputs.node-version }}
 
     - name: Install dependencies
-      run: npm ${{ inputs.npm-install-command }}
+      run: npm ci
 
     - name: Install Playwright Browsers
       if: ${{ inputs.run-playwright == 'true' }}
