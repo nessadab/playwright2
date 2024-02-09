@@ -1,9 +1,9 @@
 name: Main WorkFlow
-
 on: [push, pull_request]
 
 jobs:
     call-reusable-workflow:
+        name: Call Reusable Workflow
         uses: nessadab/reusable-flows/workflows/reusable-flow.yml@main
         with: 
          node-version: '20.x'
