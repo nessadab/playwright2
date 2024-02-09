@@ -18,7 +18,7 @@ test.describe.parallel('suite', () => {
     const SampleAppPage = new sampleAppPage(page);
     await SampleAppPage.navigateToSampleApp();
     await SampleAppPage.fillUsernameField(username);
-    await SampleAppPage.fillPasswordField(password);
+    await SampleAppPage.fillPasswordField('4343asdas');
     await SampleAppPage.clickLoginButton();
     await SampleAppPage.expectedLoginTextToBe('Invalid username/password');
   });
@@ -26,7 +26,7 @@ test.describe.parallel('suite', () => {
   test('no username test', async ({ page }) => {
     const SampleAppPage = new sampleAppPage(page);
     await SampleAppPage.navigateToSampleApp();
-    await SampleAppPage.fillUsernameField(username);
+    await SampleAppPage.fillUsernameField('');
     await SampleAppPage.fillPasswordField(password);
     await SampleAppPage.clickLoginButton();
     await SampleAppPage.expectedLoginTextToBe('Invalid username/password');
