@@ -1,5 +1,7 @@
-import { test } from '@playwright/test';
+const { test } = require('@playwright/test');
 const { sampleAppPage } = require('../models/sample-app.model');
+import * as dotenv from 'dotenv';
+dotenv.config();
 let username = process.env.USERNAME
 let password = process.env.PASSWORD
 
