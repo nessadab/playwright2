@@ -8,7 +8,7 @@ jobs:
         name: Call Reusable Workflow
         uses: nessadab/reusable-flows/.github/workflows/reusable-flow.yml@main
         with: 
-         node-version: '20.x'
+         node-version: '18'
          npm-install-command: 'ci'
          run-playwright: true
          upload-artifact: true
