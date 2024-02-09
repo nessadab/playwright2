@@ -4,7 +4,7 @@ on: [push, pull_request]
 
 jobs:
     call-reusable-workflow:
-        uses: nessadab/reusable-flows.git/.github/workflows/reusable-workflow.yml@main
+        uses: nessadab/reusable-flows/.github/workflows/reusable-flow.yml@main
         with: 
          node-version: '20.x'
          npm-install-command: 'ci'
